@@ -1,0 +1,88 @@
+
+  
+  .card {
+     animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+  .note::after {
+      content: '';
+      width: 20%;
+      height: 2px;
+      background-color: #AFAFAF;
+      position: absolute;
+      top: -1.8em;
+      left: 0;
+  }
+  .note {
+      font-size: 0.8em;
+      color: #8A8A8A;
+      position: relative;
+      margin-top: 4em;
+  }
+  
+  /* Scroller styling */
+  .scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
+
+
+
+
+
+  .fade-item {
+    transition: 2s all ease-in-out;
+    opacity: 0;
+}
+
+.fade-item:hover{
+  padding-bottom: 20px;
+  transition: background-color 1s, box-shadow 1s, transform 1s;
+  transform: translate(-20px, 20px);
+}
+
+.fade-item:active{
+  padding-bottom: 20px;
+  transition: background-color 1s, box-shadow 1s, transform 1s;
+  transform: translate(-20px, 20px);
+  color: blanchedalmond;
+}
+
+.fadein {
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

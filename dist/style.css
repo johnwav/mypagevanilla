@@ -1,0 +1,61 @@
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+
+
+
+
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
+
+/* hero1 {
+    font-family: 'Romana BT', sans-serif;
+} */
+
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 68px;
+    background-color: black;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+
+.typeText:hover 
+{
+    background-color: rgb(70, 196, 255);
+    transition: background-color 1s, box-shadow 1s, transform 1s;
+    transform: translate(-20px, 20px);
+    box-shadow: 
+    5px -5px 2px  0px #4158D0,
+    10px -10px 1px 0px black,
+    15px -15px 3px  0px #C850C0,
+    20px -20px 5px 0px black;
+}
+
+
+
+.sande:hover 
+{
+    background-color: rgb(70, 196, 255);
+    padding-bottom: 20px;
+    transition: background-color 1s, box-shadow 1s, transform 1s;
+    transform: translate(-20px, 20px);
+    box-shadow: 
+    5px -5px 2px  0px #4158D0,
+    10px -10px 1px 0px black,
+    15px -15px 3px  0px #C850C0,
+    20px -20px 5px 0px black;
+}
+
+
+
