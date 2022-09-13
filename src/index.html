@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,97 @@
     <link href="http://fonts.cdnfonts.com/css/romana-bt" rel="stylesheet">
     <link rel="stylesheet" href="/dist/scroll.css">
     <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/dist/test.css">
+    <link rel="stylesheet" href="/dist/nav.css">
 
 
 
-    <script> 
-    tailwind.config ={
-        fontFamily: 
-        {
-            sans: ['Graphik', 'sans-serif'],
-            serif: ['Merriweather', 'serif'],
-            roman:  ['Romana BT', 'sans-serif']
-        },
-    }
+
+    <script>
+        tailwind.config = {
+            fontFamily:
+            {
+                sans: ['Graphik', 'sans-serif'],
+                serif: ['Merriweather', 'serif'],
+                roman: ['Romana BT', 'sans-serif']
+            },
+        }
     </script>
 
 
 </head>
+
 <body>
     <div class="screen min-h-screen">
 
         <div class="body bg-slate-200 min-w-[768px] h-screen ">
 
-            <div class="navbar text-3xl text-black pt-14 px-12">
-                JW
+            <div class="navbar text-4xl text-black pt-14 px-12 flex place-content-between">
+                <div class=" wav bang w-20 p-2 text-center" id="wav">JW</div>
+
+                <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+                <label for="page-nav-toggle">
+                    <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+                        <g class="icon-group">
+                            <g class="icon--menu">
+                                <path d="M 6 0 L 54 0" />
+                                <path d="M 6 15 L 54 15" />
+                                <path d="M 6 30 L 54 30" />
+                            </g>
+                            <g class="icon--close">
+                                <path d="M 15 0 L 45 30" />
+                                <path d="M 15 30 L 45 0" />
+                            </g>
+                        </g>
+                    </svg>
+                </label>
+
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="https://github.com/johnwav">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/john-uwaishe-9b871419a/">Linkedin</a></li>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="https://soundcloud.com/woodpil3">Soundcloud</a></li>
+                    </ul>
+                </nav>
+
             </div>
 
             <div class="main px-14">
 
 
                 <div class="typingContainer font-roman font-bold text-[80px] text-black pt-48">
-                    <span id="typeText" class="typeText "></span>
-                    <span class="input-cursor"></span>  
-                
+                    <span id="typeText" class=""></span>
+                    <span class="input-cursor"></span>
+
                 </div>
 
                 <div class="leftInfo absolute text-slate-700 float-left bottom-12 ">
                     <h1 class="name">
                         John Uwaishe
-                     </h1>
+                    </h1>
                     <h1 class="email">
-                    email: uwaishem@gmail.com
-                     </h1>
+                        email: uwaishem@gmail.com
+                    </h1>
                 </div>
 
-                <div class="rightInfo absolute text-slate-700 float-right bottom-12 right-14">
-                    <h1 class="info">
-                     Product Manager
+                <!-- <div class="rightInfo absolute text-slate-700 float-right bottom-12 right-14">
+                    <h1 class="info ">
+                        Product Manager
                     </h1>
                     <h1 class="info">
-                    Technical writer
+                        Technical writer
                     </h1>
-            </div>
+                </div> -->
 
+
+            </div>
 
         </div>
 
-    </div>
-
         <div class="body2 bg-zinc-900 min-w-[768px] h-screen">
 
-            <div class=" container text-slate-300 px-14 h-screen">
+            <div class=" contain text-slate-300 px-14 h-screen">
 
                 <div class="content flex flex-col relative top-60">
 
@@ -76,60 +108,97 @@
                     <!-- <h1 class="text-6xl relative text-center justify ">for every problem, there is a solution which is simple.</h1>
                     <span class="text-center justify relative py-10" >Nature is pleased with simplicity.</span> -->
                     <div class="card relative justify flex flex-col">
-                        <h1 class="text-6xl ">for every problem, there is a solution which is 
-                          <!-- Scroller Start -->
-                          
-                          <div class="scroller">
-                            <span>
-                              Cool<br/>
-                              Clear<br/>
-                              Intruiging<br/>
-                              Simple
-                            </span>
-                          </div>
-                          
-                          <!-- Scroller End -->
+                        <h1 class="text-6xl ">for every problem, there is a solution which is
+                            <!-- Scroller Start -->
+
+                            <div class="scroller">
+                                <span>
+                                    Cool<br />
+                                    Clear<br />
+                                    Intruiging<br />
+                                    Simple
+                                </span>
+                            </div>
+
+                            <!-- Scroller End -->
                         </h1>
 
 
                         <p class="note text-xl"> Nature is pleased with simplicity</p>
-                      
+
+
+                    </div>
 
                 </div>
-                
+
+
             </div>
 
-    
-        </div>
+
+            <div class="body bg-slate-200 min-w-[768px] h-screen">
+                <!-- <h1 class="sande text-4xl float-left bang p-2">Skills & Expertise</h1> -->
+                <div class="navbar text-4xl text-black pt-14 px-12">
+                    <div class=" wav bang w-24 p-2 text-center blink" id="wav">Skills</div>
+                </div>
+
+                <div class="px-36 flex flex-col relative top-[50px] items-center justify">
+
+                    <!-- <div class="container flex place-content-between mb-12 sm:flex flex-col space-y-4 mb-2 justify items-center"> -->
+                    <div class="container flex place-content-between mb-12 ">
+                        <div class="card">
+                            <h2 class="text-slate-100 p-4">Product growth</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="pic"></div>
+                            <button>
+                            </button>
+                        </div class="">
+                        <div class="card card2">
+                            <h2 class="text-slate-100 p-4">Web development</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="pic"></div>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
 
 
-        <div class="body bg-slate-200 min-w-[768px] h-screen px-10">
-            <div  class="relative top-80">  
-                <h1 class="sande  text-3xl max-w-[300px]">Skills & Expertise</h1>
-                <ul class="text-xl pt-6 max-w-[200px]">
-                    <li class="fade-item">Item 01</li>
-                    <li class="fade-item">Item 02</li>
-                    <li class="fade-item">Item 03</li>
-                    <li class="fade-item">Item 04</li>
-                    <li class="fade-item">Item 05</li>
-                </ul>
+                    <!-- <div class="container flex place-content-between mt-12 md:flex flex-col space-y-4 mt-2 justify items-center"> -->
+                    <div class="container flex place-content-between mt-12 ">
+                        <div class="card card3">
+                            <h2 class="text-slate-100 p-4">Technical writing</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="pic"></div>
+                            <button>
+                            </button>
+                        </div class="">
+                        <div class="card card4">
+                            <h2 class="text-slate-100 p-4">Documentation</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="pic"></div>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+            <div class="footer bg-zinc-900 relative bottom-12">
+                <div class=""></div>
+            </div>
+
         </div>
 
-        <div class="footer bg-zinc-900 relative bottom-12">
-            <div class=""></div>
-        </div>
-
-    </div>
-
-    
 
 
 
 
-    <script src="/src/typer.js" ></script>
-    <script src="/src/anime.min.js"></script>
-    <!-- <script type="module" src="/test.js"></script> -->
+
+        
+        <script src="/src/typer.js"></script>
+        <script src="/src/anime.min.js"></script>
+        <script src="/src/cursor.js" type="module"></script>
+        
 </body>
 
 </html>

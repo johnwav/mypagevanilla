@@ -12,6 +12,7 @@ function playAnim() {
       if (index > textToBeTyped.length) {
         // no more text to add
         isAdding = false
+
         //break: wait 2s before playing again
         setTimeout( function () {
           playAnim()
@@ -36,4 +37,6 @@ function playAnim() {
   }, 120)
 }
 // start animation
+
+
 playAnim()

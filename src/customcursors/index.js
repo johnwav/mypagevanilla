@@ -88,8 +88,12 @@ function initializeCanvas(cursor) {
     if (!cursorCanvas) {
         cursorCanvas = document.createElement('canvas');
         cursorCanvas.setAttribute('class', 'curses-cursor-canvas');
-        cursorCanvas.width = window.innerWidth;
-        cursorCanvas.height = window.innerHeight;
+        cursorCanvas.width = document.body.offsetWidth;
+        cursorCanvas.height = document.body.offsetHeight;
+        window.addEventListener("resize", () => {
+            cursorCanvas.width = document.body.offsetWidth;
+            cursorCanvas.height = document.body.offsetHeight; 
+        })
         cursorCanvas.style.cssText = `
             position: absolute;
             pointer-events:none;
@@ -97,8 +101,8 @@ function initializeCanvas(cursor) {
             left: 0;
         `;
         document.querySelector('html').style.cursor = `${(cursor.hideMouse) ? "none" : "auto"}`;
-        // document.querySelector('a').style.cursor = `${(cursor.hideMouse) ? "none" : "pointer"}`;
-        // document.querySelector('button').style.cursor = `${(cursor.hideMouse) ? "none" : "auto"}`;
+        document.querySelector('a').style.cursor = `${(cursor.hideMouse) ? "none" : "pointer"}`;
+        document.querySelector('button').style.cursor = `${(cursor.hideMouse) ? "none" : "auto"}`;
         document.body.appendChild(cursorCanvas);
     }
     const ctx = cursorCanvas.getContext('2d');
