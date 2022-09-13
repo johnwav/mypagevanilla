@@ -90,12 +90,8 @@ function initializeCanvas(cursor) {
         cursorCanvas.setAttribute('class', 'curses-cursor-canvas');
         cursorCanvas.width = document.body.offsetWidth;
         cursorCanvas.height = document.body.offsetHeight;
-        window.addEventListener("resize", () => {
-            cursorCanvas.width = document.body.offsetWidth;
-            cursorCanvas.height = document.body.offsetHeight; 
-        })
         cursorCanvas.style.cssText = `
-            position: absolute;
+            position: fixed;
             pointer-events:none;
             top: 0;
             left: 0;
