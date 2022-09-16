@@ -1,34 +1,59 @@
-import {Cursor, Pointer, initializeCanvas} from './customcursors/index.js'
+import {Cursor, Pointer, initializeCanvas} from 'custom-curses'
 
 let objects = []
 
 const pointer1 = new Pointer({
     pointerShape: ['string', '👆'],
-    size: 100,
-    drag: 0.1, 
-    xOffset: 15
+    size: 50,
+    drag: 0.1,
+    xCharOffset: 9,
+    yCharOffset: 40,
+    rotation: -40,
+    xOffset: 0,
+    yOffset: 0
 }, objects)
 
 const pointer2 = new Pointer({
-    pointerShape: ['string', '😲'],
+    pointerShape: ['string', '🙂'],
     size: 20,
-    drag: 0.9, 
-    xOffset:100,
+    drag: 0.5, 
+    xOffset: 50,
     yOffset: 50
 }, objects)
 
 const pointer3 = new Pointer({
-    pointerShape: ['string', '༼ つ ◕_◕ ༽つ'],
+    pointerShape: ['string', '😲'],
     size: 20,
-    drag: 0.97, 
-    xOffset:100,
-    yOffset: 50
+    drag: 0.7, 
+    xOffset: 70,
+    yOffset: 70
+}, objects)
+
+const pointer4 = new Pointer({
+    pointerShape: ['string', '😶'],
+    size: 20,
+    drag: 0.8, 
+    xOffset: 90,
+    yOffset: 90
+}, objects)
+
+const pointer5 = new Pointer({
+    pointerShape: ['string', '😣'],
+    size: 20,
+    drag: 0.89, 
+    xOffset: 110,
+    yOffset: 110
 }, objects)
 
 const cursor1 = new Cursor({
-    pointers: [pointer1, pointer2, pointer3],
+    pointers: [pointer1,
+        pointer2,
+        pointer3,
+        pointer4,
+        pointer5
+    ],
     drag: 0, //where 1 is max
     hideMouse: true,
 });
 
-let canvasLol = initializeCanvas(cursor1);
+let canvasLol = initializeCanvas(cursor1, objects);
